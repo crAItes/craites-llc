@@ -91,9 +91,12 @@ const Header = () => {
             >
               Contact
             </button>
-            <Button onClick={() => scrollToSection('consultation')} className="w-full">
-              Free Consultation
-            </Button>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <Button onClick={() => scrollToSection('consultation')} className="flex-1">
+                Free Consultation
+              </Button>
+            </div>
           </nav>
         </div>
       )}
