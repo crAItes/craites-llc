@@ -1,10 +1,10 @@
 const Logo = ({ className = "h-10" }: { className?: string }) => {
   return (
-    <div className={`${className} flex items-center font-bold text-2xl`}>
-      <span className="text-charcoal">CR</span>
-      <span className="text-gold">AI</span>
-      <span className="text-charcoal">TES</span>
-    </div>
+    <img 
+      src="/lovable-uploads/3b81633a-03ac-4e36-a93d-945e93ec266f.png" 
+      alt="CRAITES Logo" 
+      className={className}
+    />
   );
 };
 
