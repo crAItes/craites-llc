@@ -62,8 +62,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'ai-purple': 'hsl(var(--ai-purple))',
-				'ai-blue': 'hsl(var(--ai-blue))'
+				'gold': 'hsl(var(--gold))',
+				'gold-dark': 'hsl(var(--gold-dark))',
+				'charcoal': 'hsl(var(--charcoal))'
 			},
 			backgroundImage: {
 				'gradient-ai': 'var(--ai-gradient)',

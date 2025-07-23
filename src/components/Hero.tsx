@@ -12,22 +12,22 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-ai-blue/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-gold/10" />
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-ai-blue/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gold/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="flex items-center justify-center gap-2 mb-6">
           <Sparkles className="h-6 w-6 text-primary" />
-          <span className="text-primary font-medium">Transform Your Business with AI</span>
+          <span className="text-primary font-medium">Creatively Realistic AI Tech Efficient System</span>
         </div>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           <span className="bg-gradient-ai bg-clip-text text-transparent">
-            AI Consulting
+            crAItes
           </span>
           <br />
-          <span className="text-foreground">That Delivers Results</span>
+          <span className="text-foreground">AI Consulting That Delivers</span>
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">

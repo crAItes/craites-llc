@@ -1,4 +1,5 @@
-import { Brain, Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import Logo from "./Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,10 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Brain className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold bg-gradient-ai bg-clip-text text-transparent">
-                AI Consulting Pro
-              </span>
+              <Logo />
             </div>
             <p className="text-muted-foreground">
               Transforming businesses through intelligent AI solutions. 
@@ -96,7 +94,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="font-medium">hello@aiconsultingpro.com</p>
+                  <p className="font-medium">hello@craites.com</p>
                   <p className="text-sm text-muted-foreground">Response within 4 hours</p>
                 </div>
               </div>
@@ -115,7 +113,7 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} AI Consulting Pro. All rights reserved.
+              © {currentYear} crAItes. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
