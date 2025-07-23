@@ -1,18 +1,16 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
 import Logo from "./Logo";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -41,28 +39,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Quick Links</h3>
             <div className="space-y-2">
-              <button 
-                onClick={() => scrollToSection('services')}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <button onClick={() => scrollToSection('services')} className="block text-muted-foreground hover:text-primary transition-colors">
                 Our Services
               </button>
-              <button 
-                onClick={() => scrollToSection('solutions')}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <button onClick={() => scrollToSection('solutions')} className="block text-muted-foreground hover:text-primary transition-colors">
                 Industry Solutions
               </button>
-              <button 
-                onClick={() => scrollToSection('about')}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <button onClick={() => scrollToSection('about')} className="block text-muted-foreground hover:text-primary transition-colors">
                 About Us
               </button>
-              <button 
-                onClick={() => scrollToSection('consultation')}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <button onClick={() => scrollToSection('consultation')} className="block text-muted-foreground hover:text-primary transition-colors">
                 Free Consultation
               </button>
             </div>
@@ -87,22 +73,22 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="font-medium">+1 (555) 123-4567</p>
+                  <p className="font-medium">+1 (503) 997-8710</p>
                   <p className="text-sm text-muted-foreground">Mon-Fri, 9 AM - 6 PM EST</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="font-medium">hello@craites.com</p>
-                  <p className="text-sm text-muted-foreground">Response within 4 hours</p>
+                  <p className="font-medium">rhodeschristian@icloud.com</p>
+                  <p className="text-sm text-muted-foreground">Response within 24 hours</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
                 <div>
-                  <p className="font-medium">San Francisco, CA</p>
-                  <p className="text-sm text-muted-foreground">Serving clients worldwide</p>
+                  <p className="font-medium">Oregon, USA</p>
+                  <p className="text-sm text-muted-foreground">Serving clients nationwide</p>
                 </div>
               </div>
             </div>
@@ -129,8 +115,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

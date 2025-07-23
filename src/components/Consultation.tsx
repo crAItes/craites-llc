@@ -5,18 +5,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
-import { 
-  Calendar, 
-  Clock, 
-  CheckCircle, 
-  Phone, 
-  Mail, 
-  MessageSquare,
-  ArrowRight 
-} from "lucide-react";
-
+import { Calendar, Clock, CheckCircle, Phone, Mail, MessageSquare, ArrowRight } from "lucide-react";
 const Consultation = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,29 +17,40 @@ const Consultation = () => {
     industry: '',
     message: ''
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Consultation Request Sent!",
-      description: "We'll contact you within 24 hours to schedule your free consultation.",
+      description: "We'll contact you within 24 hours to schedule your free consultation."
     });
-    setFormData({ name: '', email: '', company: '', industry: '', message: '' });
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      industry: '',
+      message: ''
+    });
   };
-
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
   };
-
-  const benefits = [
-    { icon: <Calendar className="h-5 w-5" />, text: "30-minute strategy session" },
-    { icon: <CheckCircle className="h-5 w-5" />, text: "Custom AI roadmap" },
-    { icon: <Clock className="h-5 w-5" />, text: "ROI assessment" },
-    { icon: <MessageSquare className="h-5 w-5" />, text: "Implementation timeline" }
-  ];
-
-  return (
-    <section id="consultation" className="py-20 bg-background">
+  const benefits = [{
+    icon: <Calendar className="h-5 w-5" />,
+    text: "30-minute strategy session"
+  }, {
+    icon: <CheckCircle className="h-5 w-5" />,
+    text: "Custom AI roadmap"
+  }, {
+    icon: <Clock className="h-5 w-5" />,
+    text: "ROI assessment"
+  }, {
+    icon: <MessageSquare className="h-5 w-5" />,
+    text: "Implementation timeline"
+  }];
+  return <section id="consultation" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">Free Consultation</Badge>
@@ -76,52 +80,28 @@ const Consultation = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Full Name *</label>
-                    <Input
-                      required
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      placeholder="John Doe"
-                    />
+                    <Input required value={formData.name} onChange={e => handleInputChange('name', e.target.value)} placeholder="John Doe" />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Email Address *</label>
-                    <Input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
-                      placeholder="john@company.com"
-                    />
+                    <Input type="email" required value={formData.email} onChange={e => handleInputChange('email', e.target.value)} placeholder="john@company.com" />
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Company Name</label>
-                    <Input
-                      value={formData.company}
-                      onChange={(e) => handleInputChange('company', e.target.value)}
-                      placeholder="Your Company Inc."
-                    />
+                    <Input value={formData.company} onChange={e => handleInputChange('company', e.target.value)} placeholder="Your Company Inc." />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Industry</label>
-                    <Input
-                      value={formData.industry}
-                      onChange={(e) => handleInputChange('industry', e.target.value)}
-                      placeholder="e.g., Healthcare, E-commerce"
-                    />
+                    <Input value={formData.industry} onChange={e => handleInputChange('industry', e.target.value)} placeholder="e.g., Healthcare, E-commerce" />
                   </div>
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium mb-2 block">What AI challenges are you facing?</label>
-                  <Textarea
-                    value={formData.message}
-                    onChange={(e) => handleInputChange('message', e.target.value)}
-                    placeholder="Tell us about your current challenges, goals, or specific AI use cases you're interested in..."
-                    rows={4}
-                  />
+                  <Textarea value={formData.message} onChange={e => handleInputChange('message', e.target.value)} placeholder="Tell us about your current challenges, goals, or specific AI use cases you're interested in..." rows={4} />
                 </div>
                 
                 <Button type="submit" size="lg" className="w-full group bg-gradient-ai hover:opacity-90 text-white">
@@ -141,12 +121,10 @@ const Consultation = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-center gap-3">
+                  {benefits.map((benefit, index) => <div key={index} className="flex items-center gap-3">
                       <div className="text-primary">{benefit.icon}</div>
                       <span className="font-medium">{benefit.text}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </CardContent>
             </Card>
@@ -164,7 +142,7 @@ const Consultation = () => {
                   <Phone className="h-5 w-5" />
                   <div>
                     <div className="font-medium">Phone</div>
-                    <div className="text-white/80">+1 (555) 123-4567</div>
+                    <div className="text-white/80">+1 (503) 997-8710</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -190,11 +168,9 @@ const Consultation = () => {
               <CardContent className="pt-6">
                 <div className="text-center space-y-2">
                   <div className="flex justify-center gap-1 mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-5 h-5 bg-yellow-400 rounded-full text-white flex items-center justify-center text-xs">
+                    {[...Array(5)].map((_, i) => <div key={i} className="w-5 h-5 bg-yellow-400 rounded-full text-white flex items-center justify-center text-xs">
                         ★
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                   <p className="font-medium">500+ Successful AI Implementations</p>
                   <p className="text-sm text-muted-foreground">
@@ -207,8 +183,6 @@ const Consultation = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Consultation;
