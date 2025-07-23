@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Logo from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,6 +48,7 @@ const Header = () => {
           >
             Contact
           </button>
+          <ThemeToggle />
           <Button onClick={() => scrollToSection('consultation')}>
             Free Consultation
           </Button>
