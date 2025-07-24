@@ -1,8 +1,17 @@
-const Logo = ({ className = "h-16" }: { className?: string }) => {
+import { useTheme } from "next-themes";
+
+const Logo = ({ className = "h-48" }: { className?: string }) => {
+  const { theme } = useTheme();
+
+  const logoSrc =
+    theme === "dark"
+      ? "/lovable-uploads/path-to-dark-mode-logo.png"
+      : "/lovable-uploads/path-to-light-mode-logo.png";
+
   return (
-    <img 
-      src="/lovable-uploads/3b81633a-03ac-4e36-a93d-945e93ec266f.png" 
-      alt="CRAITES Logo" 
+    <img
+      src={logoSrc}
+      alt="CRAITES Logo"
       className={className}
     />
   );

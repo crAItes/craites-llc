@@ -53,7 +53,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
-            <h3 className="text-2xl font-bold mb-6">Why Choose AI Consulting Pro?</h3>
+            <h3 className="text-2xl font-bold mb-6">Why Choose crAItes?</h3>
             <div className="space-y-6">
               <div>
                 <h4 className="font-semibold text-primary mb-2">Proven Track Record</h4>

@@ -149,7 +149,7 @@ const Consultation = () => {
                   <Mail className="h-5 w-5" />
                   <div>
                     <div className="font-medium">Email</div>
-                    <div className="text-white/80">hello@aiconsultingpro.com</div>
+                    <div className="text-white/80">christian.rhode@protonmail.com</div>
                   </div>
                 </div>
                 <div className="pt-4 border-t border-white/20">
@@ -174,7 +174,7 @@ const Consultation = () => {
                   </div>
                   <p className="font-medium">500+ Successful AI Implementations</p>
                   <p className="text-sm text-muted-foreground">
-                    "AI Consulting Pro transformed our business operations with their expert guidance and custom AI solutions."
+                    "crAItes transformed our business operations with their expert guidance and custom AI solutions."
                   </p>
                   <p className="text-xs text-muted-foreground">- Sarah Johnson, CEO TechCorp</p>
                 </div>

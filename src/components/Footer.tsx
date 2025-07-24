@@ -74,13 +74,13 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">+1 (503) 997-8710</p>
-                  <p className="text-sm text-muted-foreground">Mon-Fri, 9 AM - 6 PM EST</p>
+                  <p className="text-sm text-muted-foreground">Mon-Fri, 9 AM - 6 PM PST</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="font-medium">rhodeschristian@icloud.com</p>
+                  <p className="font-medium">christian.rhode@protonmail.com</p>
                   <p className="text-sm text-muted-foreground">Response within 24 hours</p>
                 </div>
               </div>
