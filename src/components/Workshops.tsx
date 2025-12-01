@@ -6,7 +6,7 @@ import { Calendar, Users, Clock, Target, Lightbulb, Rocket } from "lucide-react"
 const workshops = [
   {
     icon: Lightbulb,
-    title: "AI Fundamentals",
+    title: "Create Fictional Characters with AI",
     duration: "Half Day",
     audience: "All Levels",
     description: "Discover the core concepts of artificial intelligence and machine learning, and how they can transform your business operations.",
@@ -14,7 +14,7 @@ const workshops = [
   },
   {
     icon: Target,
-    title: "AI Strategy Development",
+    title: "Create AI Agents for Business",
     duration: "Full Day",
     audience: "Leadership Teams",
     description: "Build a comprehensive AI roadmap aligned with your business goals and learn to prioritize high-impact initiatives.",
@@ -22,7 +22,7 @@ const workshops = [
   },
   {
     icon: Rocket,
-    title: "Hands-On Implementation",
+    title: "Web Design and Development with AI",
     duration: "2 Days",
     audience: "Technical Teams",
     description: "Get practical experience building and deploying AI solutions with guided exercises and real-world scenarios.",
